@@ -1,0 +1,1096 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+body {
+  background-color: #020024;
+  color: white;
+}
+
+
+#main, #web, #painting, #calculator, #contact {
+  width: 100%;
+  height: 100vh;
+
+  position: relative;
+}
+
+
+.mainBackgroundLayer, .webBackgroundLayer, .paintingBackgroundLayer, .calculatorBackgroundLayer, .contactBackgroundLayer {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+}
+
+.webHeaderLayer, .paintingHeaderLayer, .calculatorHeaderLayer, .contactHeaderLayer {
+  width: 100%;
+  height: 30vh;
+
+  position: relative;
+}
+
+.webHeaderBox, .paintingHeaderBox, .calculatorHeaderBox, .contactHeaderBox {
+  width: 30vw;
+  height: 30vh;
+
+  margin: auto;
+  padding-top: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.webTitle, .paintingTitle, .calculatorTitle, .contactTitle {
+  font-size: 4em;
+}
+
+.webContentsLayer, .paintingContentsLayer, .calculatorContentsLayer, .contactContentsLayer {
+  width: 100%;
+}
+
+
+
+
+
+
+/* --------------------------------------------------nav */
+
+#nav {
+  width: 100vw;
+  height: 10vh;
+
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navBackgroundLighting {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 20px #ffffff, 0 0 40px #00aeff;
+  opacity: 0;
+
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  transition: 2s;
+}
+
+.navBackgroundLayer {
+  width: 100%;
+  height: 100%;
+  background-color: #020024;
+
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.navLayer {
+  position: relative;
+  width: 80vw;
+  height: 10vh;
+  color: white;
+
+  display: flex;
+  justify-content:space-between ;
+  align-items: center;
+  transition: 2s;
+}
+
+.toggleBox {
+  display: none;
+  transition: 1s;
+}
+
+.toggleOpen {
+  font-size: 3em;
+
+  margin: 1em;
+  display: none;
+}
+
+.toggleclose {
+  font-size: 4em;
+
+  margin: 1em;
+  display: none;
+}
+
+
+.navIcon, .navIconText {
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.navMenuBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navMenu {
+  font-size: 2em;
+  text-transform: uppercase;
+  margin: 0em 1em;
+}
+
+.menuLogoUnderBar, .menuWebUnderBar, .menuPaintingUnderBar, .menuCalculatorUnderBar, .menuContactUnderBar {
+  width: 100%;
+  height: 0.2em;
+  background-color: white;
+  visibility: hidden;
+
+  margin-top: 0.5em;
+}
+
+.menuWeb:hover, .menuPainting:hover, .menuCalculator:hover, .menuContact:hover, .contactNail:hover, .contactInsta:hover, .navLogoBox:hover, .mainDecoWeatherBox:hover {
+  text-shadow: 0 0 5px #fff, 0 0 10px #00aeff, 0 0 20px #00aeff, 0 0 30px;
+
+  cursor: pointer;
+}
+
+.navContactBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navContact {
+  font-size: 2em;
+  text-transform: uppercase;
+
+  margin-left: 1em;
+}
+
+/* --------------------------------------------------main */
+/* ---------- main > mainBackgroundLayer */
+
+.mainBackgroundLayer {
+  background: linear-gradient(180deg, rgba(2,0,36,1) 80%, rgba(43,36,158,1) 90%, rgba(132,124,255,1) 100%);
+}
+ 
+.bStar {
+  position: absolute;
+  background-image: url(./img/star01.png);
+  background-size: cover;
+  opacity: 50%;
+}
+
+.backgroundStar1 {
+  width: 1em;
+  height: 2em;
+  top: 20vh;
+  left: 5vw;
+}
+
+.backgroundStar2 {
+  width: 1.5em;
+  height: 3em;
+  top: 20vh;
+  right: 5vw;
+}
+
+.backgroundStar3 {
+  width: 1.25em;
+  height: 2.5em;
+  top: 40vh;
+  right: 10vw;
+}
+
+.backgroundStar4 {
+  width: 1.5em;
+  height: 3em;
+  top: 50vh;
+  left: 8vw;
+}
+
+.backgroundStar5 {
+  width: 1.5em;
+  height: 3em;
+  top: 60vh;
+  right: 6vw;
+}
+
+/* ---------- main > mainHeaderLayer */
+
+.mainHeaderBox {
+  width: 80vw;
+
+  position: relative;
+  margin: auto;
+  top: 30vh;
+  text-align: center;
+}
+
+.mainHeaderTitle {
+  font-size: 5em;
+  text-shadow: 0 0 10px #fff, 0 0 20px #00e1ff, 0 0 30px #00e1ff;
+  word-break: keep-all;
+}
+
+.mainHeaderSubtitle {
+  margin-top: 2em;
+  font-size: 3em;
+  text-shadow: 0 0 10px rgb(184, 184, 184), 0 0 20px #f7ffaf, 0 0 30px #f7ffaf
+}
+
+/* ---------- main > mainDecoLayer */
+
+.mainDecoLayer {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+}
+
+/* ---------- main > mainDecoLayer > mainDecoStarBox */
+
+.mainDecoStarBox {
+  width: 100%;
+  height: 100%;
+  
+}
+
+.mStar {
+  background-image: url(./img/star01.png);
+  background-size: cover;
+  position: absolute;
+}
+
+.decoStar1 {
+  width: 2.5em;
+  height: 5em;
+
+  top: 12vh;
+  right: 15vw;
+
+  animation: starScale 1s alternate infinite;
+}
+
+.decoStar2 {
+  width: 2.5em;
+  height: 5em;
+
+  top: 22vh;
+  left: 14vw;
+
+  animation: starScale 1.2s alternate infinite;
+}
+
+.decoStar3 {
+  width: 2em;
+  height: 4em;
+
+  top: 47vh;
+  right: 20vw;
+
+  animation: starScale 2s alternate infinite;
+  }
+
+.decoStar4 {
+  width: 3em;
+  height: 6em;
+
+  top: 65vh;
+  left: 15vw;
+
+  animation: starScale 1.4s alternate infinite;
+}
+
+.decoStar5 {
+  width: 2em;
+  height: 4em;
+
+  top: 80vh;
+  right: 13vw;
+
+  animation: starScale 1.1s alternate infinite;
+}
+@keyframes starScale {
+  0% {
+    transform: scale(50%);
+  }
+  100% {
+    transform: scale(100%);
+  }
+}
+
+/* ---------- main > mainDecoLayer > mainDecoPlanetBox */
+
+.mainDecoPlanetBox {
+  width: 40em;
+  height: 40em;
+
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------- main > mainDecoLayer > mainDecoSatelliteInfo */
+
+.weatherInfo {
+  width: 15em;
+  height: 6em;
+  background-color: white;
+  border-radius: 1em;
+
+  position: absolute;
+  left: 50%;
+  bottom: 55%;
+  transform: translate(-50%);
+  display: flex;
+}
+
+.cityName {
+  width: 100%;
+  height: 100%;
+  color: black;
+  font-size: 1.3em;
+  font-weight: bold;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+.weatherIcon {
+  width: 100%;
+  height: 100%;
+  color: black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: contain;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  padding: 1em;
+}
+
+/* ---------- main > mainDecoLayer > mainDecoPlanetBox > mainDecoSatelliteBox */
+
+.mainDecoSatelliteBox {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+  display: flex;
+  justify-content:space-between;
+  flex-direction: column;
+  align-items: center;
+ 
+  animation: satelliteTurn 20s infinite linear;
+
+}
+@keyframes satelliteTurn {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.satelliteBox1, .satelliteBox2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.satellite1 {
+  font-size: 2em;
+  rotate: 300deg;
+}
+
+.satellite2 {
+  font-size: 2em;
+  rotate: 150deg;
+}
+
+.lamp {
+  width: 0.6em;
+  height: 0.6em;
+  background-color: rgb(255, 0, 0);
+  box-shadow: 0 0 5px rgb(255, 0, 0),  0 0 10px red, 0 0 20px red, 0 0 40px red,  0 0 80px red;
+  border-radius: 50%;
+
+  position: absolute;
+  transform: translate(-30%, -20%);
+  
+  animation: satelliteLamp 2s infinite linear;
+}
+@keyframes satelliteLamp {
+  50% {
+    opacity: 0%;
+ }
+}
+
+.satelliteLamp1 {
+  top: 0px;
+  right: 9px;
+}
+
+.satelliteLamp2 {
+  bottom: -5px;
+  left: 7px;
+}
+
+/* ---------- main > mainDecoLayer > mainDecoPlanetBox > earthBox */
+
+  .earthBox {
+    width: 80%;
+    height: 80%;
+
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .earth {
+    width: 97%;
+    height: 97%;
+    border-radius: 50%;
+    background-image: url(./img/earth01.svg);
+    background-size: cover;
+  
+    animation: earthTurn 60s infinite linear;
+  }
+  @keyframes earthTurn {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .earthEffect {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgb(254, 254, 254), 0 0 20px rgb(254, 254, 254), 0 0 40px rgb(116, 234, 255), 0 0 80px rgb(116, 234, 255);
+    
+    position: absolute;
+    transition: 1s;
+
+    animation: effect 3s infinite linear;
+  }
+  @keyframes effect {
+    0% {
+      opacity: 0%;
+    }
+    50% {
+      opacity: 50%;
+    }
+    100% {
+      opacity: 0%;
+    }
+  }
+
+
+/* --------------------------------------------------web */
+/* ---------- web > webBackgroundLayer */
+
+.webBackgroundLayer {
+  background-color: #001326;
+}
+
+.Barlight {
+  width: 2em;
+  height: 10em;
+  border-radius: 0.5em;
+  background-color: white;
+  box-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff;
+}
+
+.light1 {
+  rotate: 45deg;
+
+  position: absolute;
+  top: 15vh;
+  left: 5vw;
+}
+
+.light2 {
+  rotate: 135deg;
+
+  position: absolute;
+  top: 15vh;
+  right: 5vw;
+}
+
+.light3 {
+  rotate: 135deg;
+
+  position: absolute;
+  bottom: 3vh;
+  left: 5vw;
+}
+
+.light4 {
+  rotate: 45deg;
+
+  position: absolute;
+  bottom: 3vh;
+  right: 5vw;
+}
+
+/* ---------- web > webContentsLayer */
+
+.webContentsBox {
+  width: 90vw;
+
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* web > webContentsLayer > webcontentsBox > webContents */
+
+.webContents {
+  width: 30em;
+
+  margin: 4em 0;
+}
+
+.webContents:hover {
+  cursor: pointer;
+}
+
+.webContents:hover > .wcLightBox > .pointLight {
+  background-color: #0fa;
+  box-shadow: 0 0 5px rgb(0, 255, 13), 0 0 10px rgb(0, 255, 13), 0 0 20px rgb(0, 255, 13);
+  }
+
+ .webContents:hover > .wcWindowBox > .webThumbnail {
+  box-shadow: inset 0 0 10px #fff, inset 0 0 20px #fff;
+  }
+
+/* web > webContentsLayer > webcontentsBox > webContents > wcLightBox */
+
+.wcLightBox {
+  width: 100%;
+  height: 5em;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.outsideLight {
+  width: 3em;
+  height: 3em;
+  background-color: rgb(202, 202, 202);
+  border-radius: 50%;
+
+  position: absolute;
+}
+
+.innerLight {
+  width: 2.5em;
+  height: 2.5em;
+  background-color: rgb(138, 138, 138);
+  border-radius: 50%;
+
+  position: absolute;
+}
+
+.pointLight {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  position: absolute;
+  background-color: rgb(255, 0, 0);
+  box-shadow: 0 0 10px rgb(253, 126, 126), 0 0 20px rgb(255, 0, 0), 0 0 40px rgb(255, 0, 0);
+}
+
+/* web > webContentsLayer > webcontentsBox > webContents > wcWindowBox */
+
+.wcWindowBox {
+  width: 30em;
+  height: 30em;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle1 {
+  width: 27em;
+  height: 27em;
+  background: rgb(124,124,124);
+  background: linear-gradient(0deg, rgba(124,124,124,1) 37%, rgba(210,210,210,1) 100%);  
+  border-radius: 50%;
+
+  position: absolute;
+}
+
+.circle2 {
+  width: 25em;
+  height: 25em;
+  background: rgb(122,122,122);
+  background: linear-gradient(180deg, rgba(122,122,122,1) 55%, rgba(176,176,176,1) 100%);
+  border-radius: 50%;
+
+  position: absolute;
+}
+
+.circle3 {
+  width: 21em;
+  height: 21em;
+  background: rgb(64,64,64);
+  background: linear-gradient(180deg, rgba(64,64,64,1) 55%, rgba(200,200,200,1) 100%);
+  border-radius: 50%;
+
+  position: absolute;
+}
+
+.webThumbnail {
+  width: 19em;
+  height: 19em;
+  border-radius: 50%;
+  background-image: url(./img/sunflowers-4298808_640.jpg);
+
+  position: absolute;
+  transition: all 0.5s;
+}
+
+/* web > webContentsLayer > webcontentsBox > webContents > wcInfo */
+
+.wcInfo {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.5em;
+  line-height: 2em;
+
+  margin: 1em;
+  text-align: center;
+  position: relative;
+}
+
+/* painting */
+/* painting > paintingBackgroundLayer */
+
+.paintingBackgroundLayer {
+  background-color: gray;
+}
+
+/* painting > paintingContentsLayer */
+
+.paintingContentsBox {
+  width: 90vw;
+
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.paintingContents {
+  width: 25em;
+  height: 40em;
+
+  margin-bottom: 5em;
+  transition: 1s;
+  position: relative;
+}
+
+.paintingContents:hover {
+  cursor: pointer;
+}
+
+.paintingContents:hover > .pcWindowBox > .pcWindow {
+  background-color: #0fa;
+  box-shadow: 0 0 5px #fff ,0 0 10px #fff, 0 0 20px #00e1ff, 0 0 40px #00e1ff;
+}
+
+.paintingContents:hover > .pcInfo {
+  text-shadow: 0 0 15px #fff ,0 0 20px #fff;
+}
+
+.pcWindowBox {
+  width: 100%;
+  height: 80%;
+
+  margin: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pcWindow {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  box-shadow: 0 0 5px rgb(255, 255, 255), 0 0 10px rgb(229, 253, 255), 0 0 20px rgb(189, 247, 255);
+  border-radius: 1em;
+  transition: 0.3s;
+}
+
+.paintingThumbnail {
+  width: 100%;
+  height: 100%;
+  background-image: url(./img/doodles-5960094_640.jpg);
+
+  position: absolute;
+  border-radius: 1em;
+}
+
+.pcInfo {
+  font-style: italic;
+  font-size: 2em;
+  font-weight: bold;
+
+  margin-top: 2em;
+  text-align: center;
+  transition: 0.3s;
+}
+
+/* ----------calculator */
+.calculatorBackgroundLayer {
+  background-color:midnightblue;
+}
+
+/* calculator > calculatorHeaderLayer */
+
+.calculatorContentsBox {
+  width: 90vw;
+
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.calculatorContents {
+  width: 30em;
+  height: 25em;
+  border: solid 1px white;
+
+  position: relative;
+  margin: 1em;
+  margin-bottom: 10vh;
+}
+
+.ccBox {
+  width: 100%;
+  height: 80%;
+
+  padding: 1em;
+}
+
+.ccTitle {
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  padding: 10px;
+}
+
+.ccSubTitle {
+  font-size: 1.5em;
+  
+  padding: 10px;
+}
+
+.ccText {
+  font-size: 1.2em;
+
+  padding: 10px;
+}
+
+.ccLink {
+  width: 100%;
+  height: 20%;
+
+  padding: 10px;
+}
+
+.openBtn, .gitBtn {
+  color: white;
+  border: solid 1px white;
+  background-color: transparent;
+  text-transform: uppercase;
+
+  padding:10px;
+  margin-left: 10px;
+}
+
+.openBtn:hover, .gitBtn:hover {
+  background-color: white;
+  color: rgb(0, 2, 116);
+  font-weight: bold;
+}
+
+/* ----------contact */
+/* contact > contactBackgroundLayer */
+
+.contactBackgroundLayer {
+  background: rgb(2,0,36);
+  background: linear-gradient(180deg, rgba(2,0,36,1) 50%, rgba(1,53,148,1) 100%);  position: absolute;
+}
+
+/* contact > contactContentsLayer */
+
+.contactContentsLayer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10em;
+}
+
+.addressText {
+  font-size: 1.5em;
+  margin-top: 2em;
+}
+
+
+/* contact > copyright */
+
+.copyright {
+  width: 100%;
+  height: 5em;
+  font-size: 1.2em;
+  font-style: italic;
+  background-color: #020024;
+
+  position: absolute;
+  bottom: 0;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* midea query */
+
+@media (max-width: 800px)  {
+  *{
+    font-size: 10px;
+  }
+
+  .mainDecoPlanetBox {
+    width: 40em;
+    height: 40em;
+  
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .weatherInfo {
+    width: 20em;
+    height: 10em;
+    background-color: white;
+    border-radius: 1em;
+  
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    display: flex;
+  }
+}
+
+@media (max-width: 650px)  {
+  *{
+    font-size: 7px;
+  }
+
+  #nav {
+    width: 50%;
+    height: 100vh;
+    right: 0;
+
+    position: fixed;
+    z-index: 1;
+  }
+
+  .navBackgroundLayer {
+    width: 100%;
+    height: 100%;
+    background-color:rgb(24, 15, 86);
+    display: none;
+  }
+
+  .navBackgroundLayer.open  {
+    display: block;
+  }
+
+ .navLayer.open  {
+    display: block;
+  }
+
+  .navLayer {
+    width: 50vw;
+    height: 100%;
+
+    flex-direction: column;
+    justify-content: center;
+    display: none;
+  }
+
+  .toggleOpen {
+    font-size: 5em;
+
+    top:0;
+    right:0;
+    margin: 1em 1.3em;
+    display: block;
+    position: absolute;
+  }
+
+  .toggleOpen.close {
+    display: none;
+  }
+
+  .toggleclose {
+    display: block;
+  }
+
+  .toggleBox {
+    display: block;
+    font-size: 10px;
+    margin: auto;
+    text-align: center;
+    }
+
+  .navLogoBox {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  .logoBox {
+    font-size: 2em;
+    margin: 1em;
+  }
+
+  .navMenuBox {
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navMenu {
+    width: 100%;
+    margin: 1em;
+    text-align: center;
+  }
+
+
+  .navContactBox, .menuLogoUnderBar, .menuWebUnderBar, .menuPaintingUnderBar, .menuCalculatorUnderBar, .menuContactUnderBar {
+    display: none;
+  }
+
+  .navBackgroundLighting {
+    display: none;
+  }
+
+  .mainHeaderBox {
+    top: 23vh;
+  }
+
+  .mainDecoPlanetBox {
+    width: 35em;
+    height: 35em;
+  
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .weatherInfo {
+    width: 20em;
+    height: 10em;
+    background-color: white;
+    border-radius: 1em;
+  
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    display: flex;
+  }
+
+  .wcInfo {
+    font-size: 3em;
+  }
+
+  .pcInfo {
+    font-size: 3em;
+  }
+
+  .calculatorContents {
+    font-size: 2em;
+  }
+
+  .ccTitle {
+    font-size: 3em;
+  }
+
+  .ccSubTitle {
+    font-size: 2.5em;
+  }
+
+  .ccText {
+    font-size: 2em;
+  }
+
+.mobile, .eMail, .insta, .facebook, .blog {
+  font-size: 1.5em;
+  letter-spacing: 0.2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+}

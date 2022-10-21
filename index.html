@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="styleSeet.css" />
+  <link rel="stylesheet_deco" href="styleSeet_deco.css" />
+  <script defer src="javascript.js"></script>
+  <!-- <script src="apikey.js"></script> -->
+  <script src="https://kit.fontawesome.com/30cb991463.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- ---------- -->
+
+  <nav id="nav">
+    <div class="navBackgroundLighting"></div>
+    <div class="navBackgroundLayer"></div>
+    <i class="fa-solid fa-bars toggleOpen"></i>
+    <div class="navLayer">
+      <ul class="toggleBox">
+        <i class="fa-solid fa-xmark toggleclose"></i>
+      </ul>
+      <a class="navLogoBox" data-view="#main">
+        <div class="logoBox" data-view="#main">
+          <i class="navIcon fa-solid fa-user-astronaut" data-view="#main"></i>
+          <span class="navIconText" data-view="#main">SEOL</span>
+        </div>
+        <div class="menuLogoUnderBar" data-under="#main"></div>
+      </a>
+      <ul class="navMenuBox">
+        <li class="menuWeb navMenu" data-view="#web">웹
+          <div class="menuWebUnderBar" data-under="#web"></div>
+        </li>
+        <li class="menuPainting navMenu" data-view="#painting">그림
+          <div class="menuPaintingUnderBar" data-under="#painting"></div>
+        </li>
+        <li class="menuCalculator navMenu" data-view="#calculator">계산기
+          <div class="menuCalculatorUnderBar" data-under="#calculator"></div>
+        </li>
+        <li class="menuContact navMenu" data-view="#contact">연락처
+          <div class="menuContactUnderBar" data-under="#contact"></div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ---------- main -->
+
+  <main id="main">
+    <div class="mainBackgroundLayer">
+      <li class="bStar backgroundStar1"></li>
+      <li class="bStar backgroundStar2"></li>
+      <li class="bStar backgroundStar3"></li>
+      <li class="bStar backgroundStar4"></li>
+      <li class="bStar backgroundStar5"></li>
+    </div>
+    <div class="mainHeaderLayer">
+      <header class="mainHeaderBox">
+        <h1 class="mainHeaderTitle">SeolDong's 포트폴리오</h1>
+        <p class="mainHeaderSubtitle">환영합니다!</p>
+      </header>
+    </div>
+    <div class="mainDecoLayer">
+      <div class="mainDecoStarBox">
+        <div class="mStar decoStar1"></div>
+        <div class="mStar decoStar2"></div>
+        <div class="mStar decoStar3"></div>
+        <div class="mStar decoStar4"></div>
+        <div class="mStar decoStar5"></div>
+      </div>
+      <div class="mainDecoPlanetBox">
+        <div class="mainDecoSatelliteBox">
+          <div class="satelliteBox1">
+            <i class="fa-solid fa-satellite satellite1"></i>
+            <div class="satelliteLamp1 lamp"></div>
+          </div>
+          <div class="satelliteBox2">
+            <i class="fa-solid fa-satellite satellite2"></i>
+            <div class="satelliteLamp2 lamp"></div>
+          </div>
+        </div>
+        <div class="earthBox">
+          <div class="earth"></div>
+          <div class="earthEffect"></div>
+        </div>
+        <div class="weatherInfo">
+          <div class="cityName"></div>
+          <div class="weatherIcon"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ---------- web -->
+
+  <section id="web">
+    <div class="webBackgroundLayer">
+      <div class="light1 Barlight"></div>
+      <div class="light2 Barlight"></div>
+      <div class="light3 Barlight"></div>
+      <div class="light4 Barlight"></div>
+    </div>
+    <header class="webHeaderLayer">
+      <div class="webHeaderBox">
+        <h1 class="webTitle">웹</h1>
+      </div>
+    </header>
+    <div class="webContentsLayer">
+      <ul class="webContentsBox">
+        <li class="webContents wc01">
+          <div class="wcLightBox">
+            <div class="outsideLight"></div>
+            <div class="innerLight"></div>
+            <div class="pointLight"></div>
+          </div>
+          <div class="wcWindowBox">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+            <div class="circle3"></div>
+            <div class="webThumbnail webT01"></div>
+          </div>
+          <div class="wcInfo"> #개인 포트폴리오</br>#예술인</br>#글라스길딩</div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ---------- -->
+
+  <section id="painting">
+    <div class="paintingBackgroundLayer">
+    </div>
+    <header class="paintingHeaderLayer">
+      <div class="paintingHeaderBox">
+        <h1 class="paintingTitle">그림</h1>
+      </div>
+    </header>
+    <div class="paintingContentsLayer">
+      <ul class="paintingContentsBox">
+        <li class="paintingContents pc01">
+          <div class="pcWindowBox">
+            <div class="pcWindow"></div>
+            <div class="paintingThumbnail paintingT01"></div>
+          </div>
+          <div class="pcInfo">간단한 캐릭터 스타일<br>숲속 가족</div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ---------- -->
+
+  <section id="calculator">
+    <div class="calculatorBackgroundLayer"></div>
+    <header class="calculatorHeaderLayer">
+      <div class="calculatorHeaderBox">
+        <h1 class="calculatorTitle">계산기</h1>
+      </div>
+    </header>
+    <div class="calculatorContentsLayer">
+      <ul class="calculatorContentsBox">
+        <div class="calculatorContents cc01">
+          <div class="ccBox">
+            <div class="ccTitle">계산기 이름</div>
+            <div class="ccSubTitle">한줄 설명 및 부제</div>
+            <div class="ccText"></div>
+          </div>
+          <div class="ccLink">
+            <button class="openBtn">new window</button>
+            <button class="gitBtn">git hub</button>
+          </div>
+        </div>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ---------- -->
+
+  <footer id="contact">
+    <div class="contactBackgroundLayer">
+    </div>
+    <header class="contactHeaderLayer">
+      <div class="contactHeaderBox">
+        <h1 class="contactTitle">연락처</h1>
+      </div>
+    </header>
+    <address class="contactContentsLayer">
+      <div class="mobile">
+        <i class="fa-solid fa-mobile-screen addressText"> 전화 : +82-000-0000-0000</i>
+      </div>
+      <div class="eMail">
+        <i class="fa-regular fa-envelope addressText"> 이메일 : abcde @ mail.com</i>
+      </div>
+      <div class="insta">
+        <i class="fa-brands fa-instagram addressText"> 인스타그램 아이디 : insta id</i>
+      </div>
+      <div class="facebook">
+        <i class="fa-brands fa-square-facebook addressText"> 페이스북 아이디 : facebook id</i>
+      </div>
+      <div class="blog">
+        <i class="fa-solid fa-blog addressText"> 블로그 : www.blog.www</i>
+      </div>
+    </address>
+    <small class="copyright">
+      copyright by 'seoldong' &nbsp
+      <i class="fa-solid fa-user-astronaut"></i>
+    </small>
+  </footer>
+  <!-- ---------- -->
+</body>
+</html>
